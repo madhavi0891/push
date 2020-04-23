@@ -36,7 +36,7 @@ pipeline {
     stage('Remove Unused docker image') {
       steps{
         sh "docker rmi $registry:$BUILD_NUMBER"
-        sh "docker run -d --name Inspiredit -p 8086:8080 vinod9782/inspired:$BUILD_NUMBER"
+        sh "docker run -d --name Inspiredit6 -p 8086:8080 vinod9782/inspired:$BUILD_NUMBER"
       }
     }     
       }
